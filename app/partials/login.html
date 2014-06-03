@@ -1,0 +1,10 @@
+<h1>Login</h1>
+<div ng-hide='isAuthenticated'>
+    Username: <input ng-model="userName"> <br />
+    Password: <input type="password" ng-model="password"> <br />
+    <button ng-click="login()">Login</button> <br />
+    <p class="ng-class: messageType">{{message}} <br />
+</div>
+<div ng-show="isAuthenticated">
+    You are authenticated, check the messages!
+</div>

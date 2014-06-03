@@ -1,0 +1,18 @@
+<h1>MESSAGES</h1>
+<div ng-show='isAuthenticated'>
+    <div class="sender-container">
+        <textarea rows="4" cols="50" ng-model="msg"></textarea>
+        <br />
+        <button ng-click="send()">Send</button>
+        <button ng-click="refresh()">Refresh</button>
+    </div>
+    <div class="message-container">
+        <div class="row" ng-repeat="message in messages">
+            <div class="sender">{{message.user}}</div>
+            <div>{{message.message}}</div>
+        </div>
+    </div>
+</div>
+<div ng-hide="isAuthenticated">
+    You are not authenticated.
+</div>

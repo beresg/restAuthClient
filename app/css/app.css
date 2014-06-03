@@ -1,0 +1,60 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+.warning {
+    color: red;
+}
+
+.success {
+    color: green;
+}
+
+.footer {
+    margin-top: 100px;
+}
+
+.sender-container{
+    float: left;
+}
+.message-container{
+    margin-left: 430px;
+}
+.message-container .row{
+    border: 1px solid #000000;
+    width: 500px;
+}
+
+.message-container div{
+    padding: 5px;
+}
+
+.sender {
+    border-bottom: 1px dashed black;
+}
